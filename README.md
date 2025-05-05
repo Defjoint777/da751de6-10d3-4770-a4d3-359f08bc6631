@@ -128,11 +128,24 @@ This is the essence of a **function as a mapping**.
 1. **Visualizing a Function**: Take a sheet of paper and visualize a function of an input called `n`, which is an Element of the set of natural numbers. And has an output called m. The function is defined as 
 
 ```
+6 = function(3,2) = 3 * 2
 m = function(n) = n * n
 ```
 
 2. **Visualize a more complex function**: Visualize a function, which' domain is the set of all two capital letter character combinations in the latin alphabet, and the codomain being the set of natural numbers. Let the function definition be the sum of both characters counting distance to the letter `A`. 
 
+<details>
+DOMAIN//CODOMAIN
+  A      0
+  B      1
+  C      2
+
+  function(a,b) = 0+1
+  function(a,c)= 0+2
+  function(b,c) = 1+2
+  ...
+  
+</details>
 <details>
   <summary>Additional information</summary>
   Distance of `A` to `A` being 0;
@@ -148,6 +161,29 @@ Define a function from the set of all 3-digit binary numbers (e.g. `'000'`, `'00
 Let the function interpret the binary string as a number in base 2.
 
 ```
+function(int zahl1)
+{
+if(zahl1 != null)
+{
+int output = 0;
+while( zahl1 == 000 || zahl1 == 001 || zahl1 == 111)
+{
+
+switc(zahl1)
+  case: 000;
+    output = 0;
+      break;
+
+  case: 001;
+    output = 1;
+      break;
+
+  case: 111;
+    output = 7;
+      break;
+}
+}
+}
 f(binary_string) = value of binary_string interpreted as a base-2 number
 ```
 
@@ -159,14 +195,55 @@ Examples:
 
 Draw both sets: the domain (all 3-digit binary strings) and the codomain (natural numbers 0 through 7), draw arrows to represent how each element of the domain maps to the codomain.
 
+Dom.     CoDom.
+000      1
+001      2
+010      3
+011      4
+100      5
+101      6
+110      7
+111      8
+________________
 
+function(int zahl1)
+{
+if(zahl1 != null)
+{
+int output = 0;
+while( zahl1 == 000 || zahl1 == 001 || zahl1 == 111)
+{
+
+switc(zahl1)
+  case: 000;
+    output = 0;
+      break;
+
+  case: 001;
+    output = 1;
+      break;
+
+  case: 111;
+    output = 7;
+      break;
+}
+}
+}
 ## 3) Questions
 1. What are other examples of functions, where objects of one set is being mapped onto a different set?
+   Answer: We can mapp any object set to every other set of objects!
+   
 2. Does it matter - in an abstract way - which types of elements are contained in a domain or codomain?
+   Answer: No its dont cuz i can map cows with elefants in abstract way!
+   
 3. How do the terms *injective* and *surjective* relate to the here presented functions?
+   Answer: the functions we became presented was injective, surinjective wasnt presented and have no relation.
+   
 4. What does the verb *to evaluate* mean? What are its ethymological roots and how is the term used in math and computer-science?
+   Answer: to evaluate came from French (valuer ="Wert") and Latin (valere ="Wert sein"), in math and computer-since "to evaluate" can be used to evaluate from abstrakt form to clear math numbers.
+   
 5. Is a mapping from _l = m(n)_: ℕ→ℕ with _l, n ∈ ℕ_ still a function, if it adds a random value to _n_ every time the mapping is evaluated?
-
+   Answer : Yes, its still a function cuz its illustrate a relation between elements.
 
 ## 4) Advice
 Understanding mappings and functions is foundational to both mathematics and computer science. While the definitions are abstract, the concepts are everywhere — from simple arithmetic to complex algorithms, from spreadsheet formulas to neural networks.
